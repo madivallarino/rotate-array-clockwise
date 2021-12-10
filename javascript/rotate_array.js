@@ -1,5 +1,10 @@
 function rotateArray(arr, k) {
   // type your code here
+  while ( k > 0 ){
+    ele = arr.pop()
+    arr.unshift(ele)
+    --k
+  }
 }
 
 if (require.main === module) {
